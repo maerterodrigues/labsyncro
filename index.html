@@ -1,0 +1,312 @@
+<!-- Abaixo temos a estrutura do HTML5, criada de forma automática pelo VS Code -->
+<!DOCTYPE html>
+<!-- Colocar pt-BR para colocar o idioma Portugês Brasileiro -->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabSyncro - Results Count</title>
+    <!-- Aqui, é linkado o arquivo .html com o .css -->
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- Abaixo, habilitamos o uso da fonte Dongle do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Abaixo, habilitamos o uso da fonte DM Sans do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!-- Implementando Font Awesome no meu site -->
+    <script src="https://kit.fontawesome.com/912b04d4dd.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="./img/logo-little-help-favicon.svg">
+
+    <script>
+        function msg() {
+            alert("Você será redirecionado para o seu servidor de e-mail," +
+                " caso não esteja logado no seu e-mail, efetue o login e tente novamente."
+            )
+        }
+
+        function click_menu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="alinhar-centro">
+        <header>
+            <nav>
+                <a href="#topo"><img class="logo" src="./img/logo-little-help.svg"></a>
+                <ul class="menu" id="itens">
+                    <li><a href="#topo">sobre</a>
+                    <li><a href="#a-lh">produtos</a></li>
+                    <li><a href="#servicos">serviços</a></li>
+                    <li><a href="#contato">contato</a></li>
+                </ul>
+                <i id="burguer" class="fa-solid fa-bars" onclick="click_menu()"></i>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <section id="topo">
+            <div class="informacoes-topo">
+                <h1> Inovação e Tecnologia, na <span class="texto-bold"> LabSyncro </span></h1>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <!--<div class="video-background">
+                <video width="100%" autoplay muted>
+                    <source src="./video/inicio_4.mp4" type="video/mp4" />
+                </video>
+            </div>-->
+        </section>
+        <div class="container">
+
+            <section id="a-lh">
+                <p class="titulos">
+                    Nosso propósito
+                </p>
+
+                <div>
+                    <!-- Primeiro banner, com uma classe que define a sua largura com 100% -->
+                    <img class="a-lh-banner-01" src="./img/banner-01.png" />
+                </div>
+
+                <div>
+                    <!-- Primeiro banner, na sua versão mobile, com uma classe que define a sua largura com 100% -->
+                    <img class="a-lh-banner-02" src="./img/banner-01-mobile.png" />
+                </div>
+
+                <div class="a-lh-flex">
+                    <!-- Parte com os números da empresa e frase do Jucelino, separados por duas Divs -->
+
+                    <div>
+                        <!-- <div><i class="fa-solid fa-quote-left"></i></div> -->
+                        <div><i class="fa-solid fa-circle-notch"></i></div>
+                        <div>
+                            <p class="a-lh-jucelino">nossos valores são a base de
+                                cada decisão e ação
+                                </span></p>
+                        </div>
+                        <!-- <div><img class="juca" src="./img/assinatura-jucelino.png"></div> -->
+                    </div>
+
+                    <div class="numeros-flex">
+                        <div>
+                            <div class="degrade-01 a-lh-numeros"><!-- 7 --> <img class="icones-sobre" src="./img/grafico.svg"></div>
+                            <p class="a-lh-jucelino">Inovação</p>
+                        </div>
+                        <div>
+                            <div class="degrade-01 a-lh-numeros"><!-- 85 --> <img class="icones-sobre" src="./img/icone-erlen.svg"></div>
+                            <p class="a-lh-jucelino">Integridade</p>
+                        </div>
+                        <div>
+                            <div class="degrade-01 a-lh-numeros"><!-- 3 --> <img class="icones-sobre" src="./img/icone-tubo-ensaio.svg"></div>
+                            <p class="a-lh-jucelino">Compromisso</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="servicos"></section>
+
+            <!-- Primeira fileira de cards começa AQUI -->
+            <div>
+                <h2 class="titulos"> Nossos produtos </span></h2>
+
+                <div class="fileira-cards">
+
+                    <div class="servicos-card">
+                        <!-- CARD DE BRANDING -->
+                        <img class="icone" src="./img/mobile-screen-button-solid.svg">
+                        <h3>Mobile</h3>
+                        <p>Acesso aos dados através do celular</p>
+                        <button><a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; entre em contato</a></button>
+                    </div>
+
+                    <!-- FRASE 1 -->
+                    <!-- <div>
+                        <p class="subtitulos"><span class="degrade-01"> criamos a
+                                sua marca</span> e comunicamos ela nas <span class="degrade-01"> mídias sociais</span>
+                        </p>
+                    </div> -->
+
+                    <div class="servicos-card">
+                        <!-- CARD DE SOCIAL MEDIA -->
+                        <img class="icone" src="./img/icone-grafico.svg">
+                        <h3>LIMS</h3>
+                        <p>Laboratory Information Management System</p>
+                        <button><a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; entre em contato</a></button>
+                    </div>
+
+                    <div class="servicos-card">
+                        <!-- CARD DE SOCIAL MEDIA -->
+                        <img class="icone" src="./img/icone-microbiologia.svg">
+                        <h3>ELN</h3>
+                        <p>Electronic Laboratory Notebook</p>
+                        <button><a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; entre em contato</a></button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Primeira fileira de cards termina AQUI -->
+
+            <!-- Segunda fileira de cards começa AQUI -->
+            <div>
+
+                <div class="fileira-cards">
+
+                    <!-- FRASE 2 -->
+                    <!-- <div>
+                        <p class="subtitulos"><span class="degrade-01"> fotos e vídeos</span> que <span
+                                class="degrade-01"> emocionam e conectam</span>
+                        </p>
+                    </div> -->
+
+                    <div class="servicos-card">
+                        <!-- CARD DE AUDIOVISUAL -->
+                        <img class="icone" src="./img/network-wired-solid.svg">
+                        <h3>Implementação</h3>
+                        <!-- <p>A arte de produzir conteúdos audiovisuais cativantes, autênticas e inesquecíveis</p> -->
+                        <button><a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; entre em contato</a></button>
+                    </div>
+
+
+                    <div class="servicos-card">
+                        <!-- CARD DE AUDIOVISUAL -->
+                        <img class="icone" src="./img/headset-solid.svg">
+                        <h3>Suporte Técnico</h3>
+                        <!-- <p>A arte de produzir conteúdos audiovisuais cativantes, autênticas e inesquecíveis</p> -->
+                        <button><a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; entre em contato</a></button>
+                    </div>
+
+                    <div class="servicos-card">
+                        <!-- CARD DE AUDIOVISUAL -->
+                        <img class="icone" src="./img/vial-circle-check-solid.svg">
+                        <h3>Teste & Validação</h3>
+                        <!-- <p>A arte de produzir conteúdos audiovisuais cativantes, autênticas e inesquecíveis</p> -->
+                        <button><a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp; entre em contato</a></button>
+                    </div>
+
+                    <!-- FRASE 3 -->
+                    <!-- <div>
+                        <p class="subtitulos"><span class="degrade-01"> animações</span> para dar <span
+                                class="degrade-01"> movimento à sua marca</span>
+                        </p>
+                    </div> -->
+
+                </div>
+
+            </div>
+            <!-- Segunda fileira de cards termina AQUI -->
+
+            
+            <!-- Terceira fileira de cards começa AQUI -->
+
+        <!-- -->
+            <!-- <div class="fileira-cards">
+
+                <div class="servicos-card">
+                     -- CARD DE CRIAÇÃO DE SITES --
+                    <img class="icone" src="./img/criacao-de-sites.svg">
+                    <h3>criação de sites</h3>
+                    <p>A arte de desenvolver sites funcionais, inovadores e visualmente impactantes.</p>
+                    <button><a target="_blank"
+                            href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i
+                                class="fa-brands fa-whatsapp"></i> &nbsp; quero uma
+                            ajudinha</a></button>
+                </div>
+
+                -- FRASE 4 --
+                <div>
+                    <p class="subtitulos"> criamos <span class="degrade-01">tudo o que você precisa</span>
+                    </p>
+                </div>
+
+                <div class="servicos-card">
+                    -- CARD DE GAMIFICAÇÃO --
+                    <img class="icone" src="./img/gamificacao.svg">
+                    <h3>gamificação</h3>
+                    <p>A arte de criar experiências imersivas, envolventes e altamente motivadoras</p>
+                    <button><a target="_blank"
+                            href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1,%20preciso%20de%20uma%20ajudinha."><i
+                                class="fa-brands fa-whatsapp"></i> &nbsp; quero uma
+                            ajudinha</a></button>
+                </div>
+
+            </div> -->
+            <!-- Terceira fileira de cards termina AQUI -->
+            <!-- Secao video -->
+             <section id="video">
+                <h2 class="titulos"> Nos conheça melhor </span></h2>
+                <div class="video-institucional">
+                <!--<video class="video-sozinho" controls>
+                    <source src="./video/Reels_Antes_e Depois.mp4" type="video/mp4" />
+                </video> -->
+                    <iframe class="video-sozinho" width="860" height="483,75" src="https://www.youtube.com/embed/wPpVtaZUdHE?si=zmbye-yc-6YXCr_h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+            <!-- Seção contato -->
+            <section id="contato">
+
+                <h2 class="titulos"> Converse melhor conosco</span></h2>
+                <div class="contato-flex">
+
+                    <!-- Cards de Contato -->
+
+                    <div> <!-- Div Principal -->
+                        <p class="contato-texto">Tem alguma dúvida,
+                            está em busca de algum
+                            dos nossos serviços ou tem interesse em fazer parte da nossa equipe?
+                        </p>
+                            <br><br>
+                        <p class="contato-texto">Preencha o
+                            formulário a seguir.</p>
+                    </div><!-- Div Principal -->
+
+                    <!-- Formulário -->
+                    <div>
+                        <form action="mailto:contato@littlehelp.com.br" method="post" enctype="text/plain">
+                            <label for=""> nome</label><br>
+                            <input type="text" name="nome" id="nome">
+                            <label for="">email</label><br>
+                            <input type="text" name="email" id="email">
+                            <label for="">endereço</label><br>
+                            <input type="text" name="telefone" id="telefone">
+                            <label for="">mensagem</label><br>
+                            <textarea rows="10" type="text" name="mensagem" id="mensagem"></textarea>
+                            <button class="botao" type="submit" onclick="msg()">enviar</button>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+    </main>
+    <footer>
+        <p>LabSyncro &#169; todos os direitos reservados. </p>
+    </footer>
+</body>
+
+</html>

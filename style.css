@@ -1,0 +1,486 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+}
+
+/* Abaixo, definição das variáveis para serem usadas no decorrer do código css da página */
+:root {
+    --roxo-escuro: #151733;
+    --roxo-claro: #0f039b;
+    --preto: #262626;
+    --degrade-01: linear-gradient(-90deg, #0f039b, #08053b);
+    --degrade-02: linear-gradient(90deg, #0f039b, #08053b);
+    --font-lh: "DM Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Corpo da página, onde todos os elementos serão aplicados para toda a página */
+body {
+    background-color: var(--roxo-escuro);
+    font-family: var(--font-lh);
+    color: white;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*  Classe especificamente criada para textos maiores, usados para títulos */
+.titulos {
+    font-size: 96px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 120px;
+}
+
+/* Degradê usado para os textos */
+.degrade-01 {
+    background: var(--degrade-01);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Segunda variação do degradê para serem usados nos textos */
+.degrade-02 {
+    background: var(--degrade-02);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.texto-bold {
+    font-weight: 900;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+/* Classe direcionada para o primeiro banner  */
+.a-lh-banner-01 {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+/* Classe para as aspas da esquerda, do Font Awesome */
+.fa-quote-left {
+    font-size: 128px;
+}
+
+.fa-circle-notch {
+    font-size: 128px;
+}
+
+.icones-sobre {
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+.a-lh-jucelino {
+    font-size: 44px;
+    line-height: 44px;
+}
+
+.a-lh-numeros {
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.a-lh-flex, .numeros-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Serviços */
+
+.icone {
+    height: 100px;   
+}
+
+.fileira-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.servicos-card {
+    background-color: white;
+    width: 100%;
+    margin: 25px;
+    padding: 50px;
+    border-radius: 25px;
+    color: var(--preto);
+    font-size: 1.5em;
+    line-height: 1.3em;
+    text-align: center;
+    box-shadow: 0px 0px 50px 0px #0f039b;
+}
+
+.fileira-cards > .servicos-card > button {
+    border: 3px solid #128c7e;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 25px;
+    padding: 7px 14px;
+    font-family: var(--font-lh);
+    margin-top: 15px;
+    width: 100%;
+}
+
+.fileira-cards > .servicos-card > button a {
+    text-decoration: none;
+    color: var(--preto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-whatsapp {
+    color: #128c7e;
+}
+
+.subtitulos {
+    font-size: 75px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+}
+
+
+/* Contato */
+
+.contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    background-color: var(--roxo-escuro);
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    padding: 20px;
+    width: -webkit-fill-available;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 2em;
+}
+
+.botao {
+    background: var(--degrade-02);
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    font-family: var(--font-lh);
+    font-size: 30px;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.cinza {
+    color: #797979;
+}
+
+.contato-icone {
+    height: 60px;
+    padding-right: 20px;
+}
+
+.contato-flex {
+    display: flex;
+    column-gap: 40px;
+}
+
+.contato-flex > div {
+    width: 100%;
+}
+
+.contato-cards {
+    display: flex;
+    align-items: center;
+    background-color: var(--roxo-escuro);
+    padding: 50px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 25px 6px rgba(0, 0, 0, 0.25), -8px -8px 25px -12px rgba(255, 255, 255, 0.25);
+}
+
+.contato-cards > div > p {
+    font-size: 32px;
+    line-height: 42px;
+
+}
+
+.contato-texto {
+    font-size: 44px;
+    line-height: 64px;
+    margin-bottom: 15px;
+}
+
+
+/* Footer */
+
+footer > p {
+    background-color: white;
+    text-align: center;
+    border-radius: 50px 50px 0 0;
+    font-size: 25px;
+    padding: 15px 10px;
+    color: var(--preto);
+}
+
+/* Cabeçalho */
+
+header {
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    border-radius: 100px;
+    padding: 25px;
+    margin: 25px;
+    width: 1200px;
+}
+
+.logo {
+    height: 75px;
+    padding: 10px 0 0 10px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    text-transform: lowercase;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu > li {
+    font-size: 2em;
+}
+
+.menu > li > a {
+    color: var(--preto);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.menu > li > a:hover {
+    background-color: var(--roxo-escuro);
+    color: white;
+    transition: 0.4s;
+}
+
+/* Topo */
+
+#topo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.video-institucional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+/**.video-sozinho {
+    width: 50%;
+}**/
+
+.informacoes-topo {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    line-height: 115px;
+    text-align: center;
+}
+
+.fa-chevron-down {
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.alinhar-centro {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 431px) {
+
+    .logo {
+        height: 62px;
+    }
+
+    /* Cards de serviços em formato coluna */
+    .a-lh-flex, .fileira-cards, .contato-flex, .numeros-flex {
+        flex-direction: column;
+    }
+
+    .a-lh-jucelino {
+        font-size: 55px;
+    }
+
+    /* Texto da parte do formulário de contato */
+    .contato-cards > div > p {
+        font-size: 25px;
+        line-height: 18px;
+    }
+
+    /* Determinar a visualização do banner para desktop, e o tamanho do banner para mobile */ 
+    .a-lh-banner-01 {
+        display: none;
+    }
+
+    .a-lh-banner-02 {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    /* Diminuir o tamanho e o espaçamento entrelinhas do texto no topo do site */
+    .informacoes-topo {
+        font-size: 35px;
+        line-height: 60px;
+    }
+
+    /* Parte sobre, com os númros conquistados pela Little Help */
+    .a-lh-flex, .numeros-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Diminuir tamanho da assinatura do Jucelino */
+    .juca {
+        width: 90%;
+    }
+
+    /* Diminuir largura dos cards de servicos */
+    .fileira-cards > .servicos-card {
+        width: 90%;
+    }
+
+    .subtitulos {
+        line-height: 50px;
+    }
+
+    .fileira-cards {
+        margin: 35px;
+    }
+
+    .video-sozinho {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .logo {
+        height: 57px;
+    }
+
+    .titulos {
+        font-size: 72px;
+        line-height: 72px;
+    }
+
+    #burguer {
+        display: block;
+        color: black;
+        font-size: 55px;
+    }
+
+    header {
+        width: -webkit-fill-available;
+    }
+
+    nav {
+        cursor: pointer;
+        justify-content: space-between;
+    }
+
+    #itens {
+        display: none;
+        position: absolute;
+        top: 16vh;
+        right: 0;
+        width: 50vw;
+        height: fit-content;
+        flex-direction: columna;
+        align-items: center;
+        background-color: white;
+        border-radius: 25px;
+        gap: 50px;
+        padding: 25px;
+    }
+
+    footer > p {
+        font-size: 20px;
+    }
+
+    .video-sozinho {
+        width: 80%;
+    }
+}
+
+@media (min-width:581px) {
+    .a-lh-banner-02 {
+        display: none;
+        margin-bottom: 50px;
+    }
+}
