@@ -132,10 +132,10 @@ h1 {
 }
 
 .fileira-cards > .servicos-card > button {
-    border: 3px solid #128c7e;
+    border: 3px solid #000000;
     border-radius: 50px;
     background-color: white;
-    font-size: 25px;
+    font-size: 20px;
     padding: 7px 14px;
     font-family: var(--font-lh);
     margin-top: 15px;
@@ -148,6 +148,16 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.fileira-cards > .servicos-card > button:hover {
+    transition: 0.4s;
+    background-color: black;
+}
+
+.fileira-cards > .servicos-card > button a:hover {
+    transition: 0.4s;
+    color: white;
 }
 
 .fa-whatsapp {
@@ -244,6 +254,23 @@ label {
     margin-bottom: 15px;
 }
 
+.destaque-preencher {
+    background: var(--degrade-02);
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    color: white;
+    width: 100%;
+    font-family: var(--font-lh);
+    font-size: 30px;
+    width: 90%;
+    margin-bottom: 60px;
+}
+
+.destaque-texto {
+    font-size: 34px;
+    text-align: center;
+}
 
 /* Footer */
 
