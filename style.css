@@ -90,7 +90,8 @@ h1 {
 
 .a-lh-jucelino {
     font-size: 44px;
-    line-height: 44px;
+    line-height: 48px;
+    margin-top: 20px;
 }
 
 .a-lh-numeros {
@@ -185,6 +186,7 @@ h1 {
 }
 
 input, textarea {
+    margin-top: 10px;
     background-color: var(--roxo-escuro);
     border: 1px solid white;
     border-radius: 50px;
@@ -303,8 +305,6 @@ header {
 .menu {
     display: flex;
     list-style: none;
-    font-weight: bold;
-    text-transform: lowercase;
     align-items: center;
 }
 
@@ -399,7 +399,7 @@ nav {
     }
 
     .a-lh-jucelino {
-        font-size: 55px;
+        font-size: 44px;
     }
 
     /* Texto da parte do formulário de contato */
